@@ -1,8 +1,7 @@
 import { utils, writeFile } from 'xlsx'
 import jsPDF from 'jspdf'
-import autoTable from 'jspdf-autotable' // type ignored if no types
+import autoTable from 'jspdf-autotable' 
 
-// We won't import types to keep it simple
 export function exportCSV(rows: any[], filename = 'transactions.csv') {
   const ws = utils.json_to_sheet(rows)
   const csv = utils.sheet_to_csv(ws)
@@ -26,7 +25,7 @@ export function exportPDF(rows: any[], filename = 'transactions.pdf') {
   const doc = new jsPDF()
   const headers = Object.keys(rows[0] ?? {})
   const data = rows.map(r => headers.map(h => String(r[h])))
-  // @ts-ignore
+ 
   autoTable(doc, { head: [headers], body: data })
   doc.save(filename)
 }

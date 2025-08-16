@@ -9,7 +9,7 @@ export const RATES: Record<Currency, number> = {
 
 export function convert(amount: number, from: Currency, to: Currency): number {
   if (from === to) return amount
-  const amountInINR = amount / RATES[from] // normalize to INR
+  const amountInINR = amount / RATES[from] 
   return amountInINR * RATES[to]
 }
 

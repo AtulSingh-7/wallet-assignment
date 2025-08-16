@@ -5,13 +5,13 @@ export type TxStatus = 'SUCCESS' | 'FAILED' | 'PENDING'
 
 export interface Transaction {
   id: string
-  date: string // ISO
+  date: string 
   type: TxType
   status: TxStatus
   amount: number
   currency: Currency
   notes?: string
-  // for exchange
+ 
   fromCurrency?: Currency
   toCurrency?: Currency
   toAmount?: number
