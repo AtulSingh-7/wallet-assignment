@@ -1,5 +1,5 @@
 
-# Wallet Assignment (React + TS + Tailwind + Zustand)
+# Wallet Assignment (React + TS + Tailwind + Redux)
 
 A fully client-side wallet app that meets the assignment requirements.
 
@@ -7,7 +7,7 @@ A fully client-side wallet app that meets the assignment requirements.
 - React (functional components & hooks)
 - TypeScript
 - Tailwind CSS
-- Zustand (state & LocalStorage persistence)
+- Resux
 - Vite (build tool)
 - XLSX (Excel/CSV export), jsPDF (PDF export)
 - React Router (routing)
